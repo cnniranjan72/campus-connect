@@ -1,35 +1,42 @@
-# CampusConnect - College Information Portal
+CampusConnect - College Information Portal
+CampusConnect is a centralized portal designed to connect students and faculty by providing easy access to notices, timetables, and campus events in real-time.
 
-## Overview
-CampusConnect is a comprehensive college information portal that connects students and faculty through a centralized platform for notices, timetables, and events.
+Features
+Student Portal
+View latest notices and announcements
 
-## Features
+Access personalized class timetables
 
-### Student Portal
-- **Notices**: View latest announcements and important updates
-- **Timetable**: Access personal class schedules and timings
-- **Events**: Discover campus events and activities
-- **Real-time Updates**: Get instant notifications when new content is posted
+Discover campus events and activities
 
-### Admin Dashboard
-- **Notice Management**: Post and manage college notices
-- **Event Creation**: Create and organize campus events
-- **Timetable Management**: Update and maintain class schedules
-- **Real-time Publishing**: Instantly publish updates to students
+Receive instant notifications on updates
 
-## Technical Architecture
-- **Frontend**: React 18 with modern hooks and components
-- **Styling**: TailwindCSS with custom design system
-- **Icons**: Lucide icon library
-- **Database**: Trickle Database for persistent data storage
-- **Multi-page Structure**: Separate pages for different user roles
+Admin Dashboard
+Manage and publish notices
 
+Create and organize events
+
+Update class schedules
+
+Publish updates instantly to all users
+
+Technology Stack
+Frontend: React 18 with hooks and components
+
+Styling: TailwindCSS using a custom design system
+
+Icons: Lucide icon library
+
+Database: Trickle Database for persistent storage
+
+Multi-page architecture supporting distinct user roles
+
+File Structure Preview
+text
 CAMPUS_CONNECT/
 │
 ├── client/
-│   ├── node_modules/
 │   ├── public/
-│   │   └── vite.svg
 │   └── src/
 │       ├── assets/
 │       ├── components/
@@ -48,16 +55,9 @@ CAMPUS_CONNECT/
 │       ├── pages/
 │       │   └── NoticePage.jsx
 │       ├── api.js
-│       ├── App.css
 │       ├── App.jsx
 │       ├── index.css
 │       ├── main.jsx
-│       ├── .gitignore
-│       ├── eslint.config.js
-│       ├── index.html
-│       ├── package-lock.json
-│       ├── package.json
-│       ├── README.md
 │       └── vite.config.js
 │
 ├── server/
@@ -68,16 +68,13 @@ CAMPUS_CONNECT/
 │   │   ├── Notice.js
 │   │   ├── Timetable.js
 │   │   └── user.js
-│   ├── node_modules/
 │   ├── routes/
 │   │   ├── auth.js
 │   │   ├── Event.js
 │   │   ├── Notice.js
 │   │   └── Timetable.js
 │   ├── .env
-│   ├── index.js
-│   ├── package-lock.json
-│   └── package.json
+│   └── index.js
 │
 ├── trickl/
 │   ├── assets/
@@ -86,30 +83,36 @@ CAMPUS_CONNECT/
 │   │   └── README.md
 │   └── rules/
 │       └── rule_for_readme_maintenance.md
+Pages
+Landing Page (index.html) - Entry point with portal options
 
-## Pages
-1. **Landing Page** (`index.html`) - Main entry point with portal selection
-2. **Student Portal** (`student.html`) - Student interface for viewing content
-3. **Admin Dashboard** (`admin.html`) - Faculty interface for content management
+Student Portal (student.html) - Interface for students
 
-## Design System
-- **Primary Color**: Blue (#2563eb)
-- **Secondary Color**: Light gray (#f1f5f9)
-- **Accent Color**: Green (#10b981)
-- **Typography**: Inter font family
-- **Layout**: Card-based design with consistent spacing
+Admin Dashboard (admin.html) - Interface for faculty and admins
 
-## Data Models
-The application uses Trickle Database with the following object types:
-- `notice` - College notices and announcements
-- `event` - Campus events and activities  
-- `timetable` - Class schedules and timings
+Design System
+Primary color: Blue (#2563eb)
 
-## Getting Started
-1. Open `index.html` in a web browser
-2. Choose between Student Portal or Admin Dashboard
-3. Navigate through the interface using the sidebar menu
-4. All data persists automatically using Trickle Database
+Secondary color: Light gray (#f1f5f9)
 
-## Last Updated
-January 2025
+Accent color: Green (#10b981)
+
+Typography: Inter font family
+
+Layout: Card-based with consistent spacing
+
+Data Models
+notice: College announcements
+
+event: Campus activities
+
+timetable: Class schedules
+
+Running the Project
+Open index.html in a web browser
+
+Select the Student Portal or Admin Dashboard
+
+Navigate using the sidebar menu
+
+All data is automatically saved using Trickle Database
